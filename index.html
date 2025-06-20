@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushila Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.08;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="particles"></div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full bg-gradient-to-r from-black/70 to-black/20 backdrop-blur-md py-4 z-50 shadow">
+    <nav class="container mx-auto flex justify-between items-center px-4">
+      <span class="text-cyan-400 text-2xl font-bold">&lt;/&gt;</span>
+      <ul class="flex space-x-6 text-sm font-semibold">
+        <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+        <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+        
+        <li><a href="#education" class="hover:text-cyan-400">Education</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center px-4">
+    <div class="max-w-2xl w-full bg-white/5 backdrop-blur-lg p-10 rounded-xl shadow-lg mt-28">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">
+        Hi, I'm <span class="text-cyan-400">Sushila</span>
+      </h1>
+      <h2 class="text-lg text-cyan-200 mb-4">
+        <span id="typed-role"></span>
+      </h2>
+      <p class="text-sm text-gray-300 mb-6">
+        A passionate developer specializing in frontend and full-stack development, with a deep interest in machine learning and UI/UX design. I enjoy crafting responsive user interfaces and building intelligent applications.
+      </p>
+      <a href="#contact" class="text-cyan-300 font-semibold hover:underline">Get In Touch</a>
+      <div class="flex justify-center gap-6 text-xl mt-6">
+        <a href="https://github.com/382543" target="_blank" class="hover:text-cyan-400"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yerukala-sushila-117056267/" target="_blank" class="hover:text-cyan-400"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:susheelay160@gmail.com" class="hover:text-cyan-400"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Updated Layout) -->
+  <section id="about" class="max-w-6xl mx-auto p-10 mt-10 text-white">
+    <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
+      About Me
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Who I Am -->
+      <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-user text-cyan-400 text-2xl"></i>
+          <h3 class="text-xl font-semibold">Who I Am</h3>
+        </div>
+        <p class="text-gray-200 text-sm leading-relaxed">
+          Hello! I'm <strong>Sushila</strong>, a passionate full-stack developer and ML enthusiast with a strong foundation in data analytics and creative design. I love building data-driven applications that are impactful, functional, and user-centric.
+        </p>
+        <p class="text-gray-400 text-sm mt-4">
+          When I'm not coding, I explore UI/UX trends, dive into AI advancements, or work on side projects that help solve real-world problems. My curiosity and eagerness to learn drive me forward.
+        </p>
+      </div>
+      <!-- What I Do -->
+      <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-code text-cyan-400 text-2xl"></i>
+          <h3 class="text-xl font-semibold">What I Do</h3>
+        </div>
+        <ul class="space-y-3 text-sm text-gray-100">
+          <li class="flex items-center gap-2"><span class="w-3 h-3 bg-cyan-400 rounded-full"></span> AI & Machine Learning Development</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 bg-blue-400 rounded-full"></span> Deep Learning Model Design</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 bg-purple-400 rounded-full"></span> Data Analysis & Visualization</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 bg-cyan-400 rounded-full"></span> Full-Stack Web Development</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 bg-blue-400 rounded-full"></span> UI/UX Interface Design</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 bg-purple-400 rounded-full"></span> Computer Vision Applications</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- (Other sections like Skills, Projects, Achievements, Education, Contact stay the same or will follow next) -->
+
+  <script>
+    new Typed('#typed-role', {
+      strings: ["Full-stack Developer", "ML Enthusiast", "UI/UX Designer"],
+      typeSpeed: 80,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+
+ <!-- Animated Background -->
+<div id="particles-js" class="absolute inset-0 -z-10"></div>
+<div class="floating-icons absolute inset-0 -z-10">
+  <i class="fas fa-laptop-code text-cyan-400 text-xl absolute animate-float" style="top:20%; left:15%;"></i>
+  <i class="fas fa-mobile-alt text-pink-400 text-xl absolute animate-float" style="top:60%; left:70%;"></i>
+  <i class="fas fa-code text-yellow-300 text-xl absolute animate-float" style="top:40%; left:30%;"></i>
+</div>
+
+<style>
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>
+
+<!-- Skills Section -->
+<section id="skills" class="max-w-6xl mx-auto p-10 mt-16 text-white">
+  <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-12">
+    Skills
+  </h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-md border border-white/10">
+      <h3 class="text-xl font-bold text-cyan-300 mb-4">Frontend</h3>
+      <ul class="space-y-4 text-gray-200">
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-html5 text-orange-400 mr-2"></i>HTML</span><span>95%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-orange-400 h-2.5 rounded-full" style="width: 95%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-css3-alt text-blue-400 mr-2"></i>CSS</span><span>90%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-blue-400 h-2.5 rounded-full" style="width: 90%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-js-square text-yellow-300 mr-2"></i>JavaScript</span><span>85%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-yellow-300 h-2.5 rounded-full" style="width: 85%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fas fa-code text-teal-300 mr-2"></i>Tailwind CSS</span><span>80%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-teal-300 h-2.5 rounded-full" style="width: 80%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-react text-cyan-300 mr-2"></i>React</span><span>75%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-cyan-300 h-2.5 rounded-full" style="width: 75%"></div></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-md border border-white/10">
+      <h3 class="text-xl font-bold text-cyan-300 mb-4">Backend & Tools</h3>
+      <ul class="space-y-4 text-gray-200">
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-node-js text-green-400 mr-2"></i>Node.js</span><span>80%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-green-400 h-2.5 rounded-full" style="width: 80%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fas fa-database text-blue-300 mr-2"></i>MySQL</span><span>85%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-blue-300 h-2.5 rounded-full" style="width: 85%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-aws text-yellow-400 mr-2"></i>AWS</span><span>70%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-yellow-400 h-2.5 rounded-full" style="width: 70%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-git-alt text-red-400 mr-2"></i>Git & GitHub</span><span>90%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-red-400 h-2.5 rounded-full" style="width: 90%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fab fa-figma text-pink-400 mr-2"></i>Figma</span><span>88%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-pink-400 h-2.5 rounded-full" style="width: 88%"></div></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-md border border-white/10">
+      <h3 class="text-xl font-bold text-cyan-300 mb-4">ML & CV</h3>
+      <ul class="space-y-4 text-gray-200">
+        <li>
+          <div class="flex justify-between"><span><i class="fas fa-robot text-purple-300 mr-2"></i>Python</span><span>90%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-purple-300 h-2.5 rounded-full" style="width: 90%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fas fa-eye text-indigo-300 mr-2"></i>OpenCV</span><span>80%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-indigo-300 h-2.5 rounded-full" style="width: 80%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fas fa-hand-paper text-pink-300 mr-2"></i>MediaPipe</span><span>78%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-pink-300 h-2.5 rounded-full" style="width: 78%"></div></div>
+        </li>
+        <li>
+          <div class="flex justify-between"><span><i class="fas fa-bullseye text-red-300 mr-2"></i>YOLO</span><span>75%</span></div>
+          <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-red-300 h-2.5 rounded-full" style="width: 75%"></div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 20 },
+      shape: {
+        type: "image",
+        image: [
+          { src: "https://img.icons8.com/ios-filled/50/laptop.png", width: 20, height: 20 },
+          { src: "https://img.icons8.com/ios-filled/50/source-code.png", width: 20, height: 20 },
+          { src: "https://img.icons8.com/ios-filled/50/smartphone.png", width: 20, height: 20 }
+        ]
+      },
+      size: { value: 20 },
+      move: { speed: 1 },
+    },
+    retina_detect: true
+  });
+</script>
+
+
+
+
+  <!-- Projects Section -->
+<section id="projects" class="max-w-6xl mx-auto p-10 mt-10 text-white">
+  <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
+    Projects
+  </h2>
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- Project 1 -->
+    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
+      <h3 class="text-xl font-semibold text-white mb-2">🔍 CCTV Surveillance with YOLO</h3>
+      <p class="text-gray-300 text-sm mb-4">An intelligent surveillance system using YOLO for real-time object detection in CCTV footage. Designed for security and automation use-cases.</p>
+      <a href="https://github.com/382543/cctv-surveillance-yolo" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
+      <h3 class="text-xl font-semibold text-white mb-2">🏋️‍♀️ Gym Form Tracker</h3>
+      <p class="text-gray-300 text-sm mb-4">Utilizes MediaPipe and OpenCV to provide real-time posture analysis and rep tracking for workout enhancement.</p>
+      <a href="https://github.com/382543/gym-form-tracker-mediapipe" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
+      <h3 class="text-xl font-semibold text-white mb-2">🛒 E-commerce Platform on AWS</h3>
+      <p class="text-gray-300 text-sm mb-4">Built a scalable online store using PrestaShop hosted on AWS EC2 with integrated MySQL and PHP backend.</p>
+      <a href="https://github.com/382543/ecommerce-aws-prestashop" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
+    </div>
+
+</section>
+
+
+
+   <!-- Education Section -->
+<section id="education" class="max-w-4xl mx-auto p-10 mt-10 text-white">
+  <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
+    Education
+  </h2>
+  <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10 space-y-6">
+    <div>
+      <h3 class="text-xl font-semibold text-white">🎓 VIT-AP University</h3>
+      <p class="text-gray-300 text-sm">Bachelor of Technology in Computer Science (Specialization in Data Analytics)</p>
+      <p class="text-gray-400 text-sm">2022 – 2025</p>
+    </div>
+    <div class="pt-4 border-t border-white/10">
+      <h3 class="text-xl font-semibold text-white">🏫 Montessori - Kurnool</h3>
+      <p class="text-gray-300 text-sm">Andhra Pradesh Board of Secondary Education (BSEAP)</p>
+      <p class="text-gray-400 text-sm">2019 – 2020</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="max-w-4xl mx-auto p-10 mt-16 text-white">
+  <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
+    Contact Me
+  </h2>
+  <div class="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 px-6 py-10 space-y-10">
+    <div class="flex flex-col md:flex-row justify-around text-center gap-6">
+      <div class="text-sm text-gray-300 flex items-center justify-center gap-2">
+        <i class="fas fa-envelope text-cyan-300"></i>
+        <span>Email:</span>
+        <a href="mailto:susheelay160@gmail.com" class="text-cyan-300 hover:underline flex items-center gap-1">
+          <i class="fas fa-paper-plane"></i> susheelay160@gmail.com
+        </a>
+      </div>
+      <div class="text-sm text-gray-300 flex items-center justify-center gap-2">
+        <i class="fab fa-github text-cyan-300"></i>
+        <span>GitHub:</span>
+        <a href="https://github.com/382543" class="text-cyan-300 hover:underline flex items-center gap-1" target="_blank">
+          <i class="fab fa-github"></i> github.com/382543
+        </a>
+      </div>
+      <div class="text-sm text-gray-300 flex items-center justify-center gap-2">
+        <i class="fab fa-linkedin text-cyan-300"></i>
+        <span>LinkedIn:</span>
+        <a href="https://www.linkedin.com/in/yerukala-sushila-117056267/" class="text-cyan-300 hover:underline flex items-center gap-1" target="_blank">
+          <i class="fab fa-linkedin"></i> @yerukala-sushila
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="mt-8 space-y-6 max-w-xl mx-auto" action="https://formspree.io/f/your-form-id" method="POST">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input type="text" name="name" placeholder="Your Name" required class="px-4 py-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <input type="email" name="email" placeholder="Your Email" required class="px-4 py-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+      </div>
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-4 py-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+      <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+        Send Message
+      </button>
+    </form>
+    <p class="text-xs text-gray-400 text-center">Powered by Formspree — your message will be delivered to Sushila directly.</p>
+  </div>
+</section>
+</body>
+</html>
