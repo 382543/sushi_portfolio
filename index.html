@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <body>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -353,7 +354,7 @@ body {
 <div class="shooting-star" style="top: 65%; left: 60%; animation-delay: 5s;"></div>
 <div class="shooting-star" style="top: 75%; left: 70%; animation-delay: 7s;"></div>
 <div class="shooting-star" style="top: 85%; right: 80%; animation-delay: 9s;"></div>
-<div class="shooting-star" style="top: 90%; right: 30%; animation-delay: 10s;"></div>
+<div class="shooting-star" style="top: 90%; left: 30%; animation-delay: 10s;"></div>
 <!-- Satellite Orbit -->
 <div class="satellite-orbit">
   <div class="satellite-icon"></div>
@@ -602,7 +603,7 @@ body {
           <div class="flex justify-between"><span><i class="fab fa-js-square text-yellow-300 mr-2"></i>JavaScript</span><span>85%</span></div>
           <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-yellow-300 h-2.5 rounded-full" style="width: 85%"></div></div>
         </li>
-       
+      
         <li>
           <div class="flex justify-between"><span><i class="fab fa-react text-cyan-300 mr-2"></i>React</span><span>75%</span></div>
           <div class="w-full bg-white/10 rounded-full h-2.5"><div class="bg-cyan-300 h-2.5 rounded-full" style="width: 75%"></div></div>
@@ -677,43 +678,81 @@ body {
   });
 </script>
 
+<body>
 
+<!-- Add this before </body> -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-
-  <!-- Projects Section -->
-<section id="projects" class="max-w-6xl mx-auto p-10 mt-10 text-white">
-  <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
-    Projects
+<!-- Projects Section -->
+<section id="projects" class="py-16 px-6 lg:px-24 bg-transparent text-white">
+  <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center text-white">
+     My Projects
   </h2>
-  <div class="grid md:grid-cols-3 gap-8">
 
-    <!-- Project 1 -->
-    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
-      <h3 class="text-xl font-semibold text-white mb-2"> CCTV Surveillance with YOLO</h3>
-      <p class="text-gray-300 text-sm mb-4">An intelligent surveillance system using YOLO for real-time object detection in CCTV footage. Designed for security and automation use-cases.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Project 1: CCTV Surveillance with YOLO -->
+    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10 hover:shadow-cyan-500/50 transition-shadow duration-300">
+      <lottie-player
+        src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+        background="transparent"
+        speed="1"
+        loop autoplay
+        style="width: 100%; height: 220px;">
+      </lottie-player>
+      <h3 class="text-xl font-semibold text-white mb-2">CCTV Surveillance with YOLO</h3>
+      <p class="text-gray-300 text-sm mb-4">
+     cv surveillance using YOLOv8 to detect real-time crowd and ensure campus safety .
+      </p>
       <a href="https://github.com/382543/cctv-footage" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
     </div>
 
-    <!-- Project 2 -->
-    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
-      <h3 class="text-xl font-semibold text-white mb-2"> Gym Form Tracker</h3>
-      <p class="text-gray-300 text-sm mb-4">Utilizes MediaPipe and OpenCV to provide real-time posture analysis and rep tracking for workout enhancement.</p>
-      <a href="https://github.com/382543/gym" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
-    </div>
+  <!-- Project 2: AI Gym Form Tracker -->
+<div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10 hover:shadow-purple-500/50 transition-shadow duration-300">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <lottie-player
+    src="https://assets5.lottiefiles.com/packages/lf20_3rwasyjy.json" 
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+    style="width: 100%; height: 220px;">
+  </lottie-player>
 
-    <!-- Project 3 -->
-    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10">
-      <h3 class="text-xl font-semibold text-white mb-2"> E-commerce Platform on AWS</h3>
-      <p class="text-gray-300 text-sm mb-4">Built a scalable online store using PrestaShop hosted on AWS EC2 with integrated MySQL and PHP backend.</p>
+  <h3 class="text-xl font-semibold text-white mb-2">AI Gym Form Tracker</h3>
+  <p class="text-gray-300 text-sm mb-4">
+    A posture correction system using MediaPipe for fitness tracking and body alignment feedback with graph.
+  </p>
+  <a href="https://github.com/382543/gym" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
+</div>
+
+
+    
+    <!-- Project 3: Budgeteco – E-Commerce Site -->
+    <div class="bg-white/5 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/10 hover:shadow-pink-500/50 transition-shadow duration-300">
+      <lottie-player
+        src="https://assets5.lottiefiles.com/packages/lf20_pprxh53t.json"
+        background="transparent"
+        speed="1"
+        loop autoplay
+        style="width: 100%; height: 220px;">
+      </lottie-player>
+      <h3 class="text-xl font-semibold text-white mb-2">Budgeteco – E-Commerce Site</h3>
+      <p class="text-gray-300 text-sm mb-4">
+        PrestaTop is a dynamic e-commerce website built with PrestaShop and hosted on AWS EC2, offering a secure and scalable online shopping experience.
+  It features a modern UI, seamless checkout, and cloud-based deployment for 24/7 global accessibility.
+      </p>
       <a href="http://13.232.5.42/" target="_blank" class="inline-block text-cyan-300 hover:underline">View GitHub Repo →</a>
     </div>
 
+  </div>
 </section>
-
+</body>
 
 
    <!-- Education Section -->
-<section id="Education" class="max-w-4xl mx-auto p-10 mt-10 text-white">
+<section id="education" class="max-w-4xl mx-auto p-10 mt-10 text-white">
   <h2 class="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
     Education
   </h2>
@@ -775,10 +814,6 @@ body {
     <p class="text-xs text-gray-400 text-center">Powered by Formspree — your message will be delivered to Sushila directly.</p>
   </div>
 </section>
-
-
-
-
 <!-- Footer Contact Icons -->
 <footer class="w-full bg-black/80 py-6 mt-20">
   <div class="flex justify-center items-center gap-10 text-3xl text-cyan-400">
